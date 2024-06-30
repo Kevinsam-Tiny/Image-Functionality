@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing App</title>
+</head>
+<body>
+    <h1>Image Processing App</h1>
+
+    <h2>Remove Background </h2>
+    <form action="/remove_background" method="post" enctype="multipart/form-data">
+        <label for="bgRemoval">Upload Image:</label>
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Remove Background </button>
+    </form>
+
+    <h2>Optimize Image</h2>
+    <form action="/enhance" method="post" enctype="multipart/form-data">
+        <label for="imageEnhancement">Upload Image:</label>
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Optimize Image</button>
+    </form>
+
+    <h2>Compress</h2>
+    <form action="/compress" method="post" enctype="multipart/form-data">
+        <label for="bg">Upload Image:</label>
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Remove Background</button>
+    </form>
+
+    <h2>Get three different Images with:  Background removal,enhancement and compression</h2>
+    <form action="/process_image" method="post" enctype="multipart/form-data">
+        <label for="imageEnhancement">Upload Image:</label>
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Optimize Image</button>
+    </form>
+</body>
+</html>
